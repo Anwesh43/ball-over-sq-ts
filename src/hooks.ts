@@ -64,7 +64,7 @@ export const useStyle = (w : number, h : number, scale : number) => {
                 left 
             }
         },
-        ballStyle() {
+        ballStyle() : CSSProperties {
             const top = `${-size - (h / 2) * sf}px`
             const left = `${-size / 2}px`
             const width = `${size}px`
@@ -79,7 +79,7 @@ export const useStyle = (w : number, h : number, scale : number) => {
                 background 
             }
         },
-        squareStyle() {
+        squareStyle() : CSSProperties {
             const left = `${-size / 2}px`
             const top = `${0}px`
             const width = `${size}px`
