@@ -10,7 +10,7 @@ interface BallOverSqProps {
 }
 const BallOverSq = (props : BallOverSqProps) => {
     const {ballStyle, squareStyle, parentStyle} = useStyle(props.w, props.h, props.scale)
-    return (<div style = {parentStyle()}>
+    return (<div style = {parentStyle()} onClick = {() => props.onClick()}>
             <div style = {ballStyle()}></div>
             <div style = {squareStyle()}></div>
         </div>)
